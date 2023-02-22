@@ -35,7 +35,7 @@ alias command="ls -la"
 alias tester="bash ~/tester.sh"
 ```
 
-- Lastly, execute `source ~/.bashrc`
+- Lastly, execute `source ~/.bashrc` on your terminal.
 
 Woah! You will be able to run the command in every directory.
 > `tester` [-d] <test_num> <runs_test>
