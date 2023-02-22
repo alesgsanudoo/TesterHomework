@@ -89,9 +89,9 @@ if $passed; then
   echo -e " Test count: $pass_count/$2"
   echo -e " "
   if $debug_mode; then
-  echo -e " Mode = Debug"
+    echo -e " Mode = Debug"
   else
-  echo -e " Mode = Normal"
+    echo -e " Mode = Normal"
   fi
   echo -e " "
   echo -e " Score: $score/100"
