@@ -13,14 +13,14 @@ To know:
 
 ### How to use it?
 > bash tester.sh [-d] <test_num> <runs>
-- -d: Debug mode [Save test files]
-- <test_num>: The homework number. [HW(Number)]
-- <runs>: Number runs to be made. [15000]
+- -d -> Debug mode [Save test files]
+- <test_num> -> The homework number. [HW(Number)]
+- <runs> -> Number runs to be made. [15000]
 
 > If you are in another directory in order to run the `sh` file just use bash bash **~/tester.sh** 
 
 ### Optional (Alias)
-It sounds awkward to put `bash tester.sh with the directory` every time, isn't? I will give you a solution ^.^. 
+It sounds awkward to put `bash tester.sh` with the directory every time, isn't? I will give you a solution ^.^. 
 > **tester [-d] <test_num> <runs>**
 - Open  `~/.bashrc`
 - You will see Aliases section: 
