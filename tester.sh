@@ -40,7 +40,22 @@ if ! [[ "$NUM_TESTS" =~ ^[0-9]+$ ]]; then
   exit 1
 fi
 
+if [[ ! -d "cs240/hw${TEST_NUM}" ]]; then
+  echo "CS240 Tester - 0.1"
+  echo ""
+  echo "Error: Invalid directory!"
+  exit 1
+fi
+
 cd ~/cs240/hw${TEST_NUM}
+
+if [[ ! -x "./hw${TEST_NUM}_test" ]]; then
+  echo "CS240 Tester - 0.1"
+  echo ""
+  echo "Error: Test executable not found!"
+  exit 1
+fi
+
 RUN="./hw${TEST_NUM}_test"
 
 
