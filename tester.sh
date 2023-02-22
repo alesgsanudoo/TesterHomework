@@ -4,7 +4,7 @@ usage() {
   echo "CS240 Tester - 0.1"
   echo ""
   echo "Usage: tester [-d] <test_number> <num_tests>"
-  echo "  -d: Debug mode [Delete test Files] (optional)"
+  echo "  -d: Debug mode [Save test Files] (optional)"
   echo ""
   echo "Example: tester (-d) 5 (Homework number) 15000 (times)"
   echo ""
