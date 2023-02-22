@@ -13,7 +13,7 @@ To know:
 
 ### How to use it?
 > bash tester.sh [-d] <test_num> <runs_test>
-- -d -> Debug mode [Save test files]
+- -d -> Debug mode [Save test files] (Optional)
 - <test_num> -> The homework number. [HW(Number)]
 - <runs_test> -> Number runs to be made. [15000]
 
@@ -21,7 +21,7 @@ To know:
 
 ### Optional (Alias)
 It sounds awkward to put `bash tester.sh` with the directory every time, isn't? I will give you a solution ^.^. 
-> **tester [-d] <test_num> <runs>**
+> **tester [-d] <test_num> <runs_test>**
 - Open  `~/.bashrc`
 - You will see Aliases section: 
 - Add => `alias tester="bash ~/tester.sh"`
@@ -36,9 +36,9 @@ alias tester="bash ~/tester.sh"
 ```
 
 Woah! You will be able to run the command in every directory.
-> `tester` [-d] <test_num> <runs>
+> `tester` [-d] <test_num> <runs_test>
 
-
+#
 **Thanks!!!** Love Alex ♥ 
 
 
