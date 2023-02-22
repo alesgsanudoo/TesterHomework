@@ -36,7 +36,7 @@ alias tester="bash ~/tester.sh"
 ```
 
 Woah! You will be able to run the command in every directory.
-> `**tester [-d] <test_num> <runs>**`
+> `tester` [-d] <test_num> <runs>
 
 
 **Thanks!!!** Love Alex ♥ 
