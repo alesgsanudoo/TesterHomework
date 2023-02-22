@@ -12,10 +12,10 @@ To know:
 - You are done! ^.^
 
 ### How to use it?
-> bash tester.sh [-d] <test_num> <runs>
+> bash tester.sh [-d] <test_num> <runs_test>
 - -d -> Debug mode [Save test files]
 - <test_num> -> The homework number. [HW(Number)]
-- <runs> -> Number runs to be made. [15000]
+- <runs_test> -> Number runs to be made. [15000]
 
 > If you are in another directory in order to run the `sh` file just use bash bash **~/tester.sh** 
 
