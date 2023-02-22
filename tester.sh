@@ -58,6 +58,15 @@ fi
 
 RUN="./hw${TEST_NUM}_test"
 
+function handle_interrupt {
+  echo -e "\nControl+C detected. Exiting..."
+  if ! $debug_mode; then
+    rm -rf ~/cs240/hw$TEST_NUM/test_data_files
+  fi
+  exit 1
+}
+
+trap handle_interrupt SIGINT
 
 passed=true
 
