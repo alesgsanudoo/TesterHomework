@@ -21,7 +21,7 @@ To know:
 #### Examples:
 - `tester -d 5 15000`: It will run homework 5 test cases 15000 times. Also it will save **test_data_files** directory (Debug mode).
 - `tester 5 15000`: It will run homework 5 test cases 15000 times. However, it won't save **test_data_files** directory ( No Debug mode).
-- `tester -d -s 62 5 15000`: It will run homework 5 test cases 15000 times. It will save **test_data_files** directory (Debug mode). Also, it will change the grade of the tester, then it will allow you to test one fuction multiple times. (Withough setting -s is 100).
+- `tester -d -s 62 5 15000`: It will run homework 5 test cases 15000 times. It will save **test_data_files** directory (Debug mode). Also, it will change the grade of the tester, then it will allow you to test one fuction multiple times. (Without setting -s, the score by defualt is 100).
 
 > **Note!** I am using tester as I did Optional (Alias) section, otherwise, you should use bash **~/tester.sh** instead of tester.
 
