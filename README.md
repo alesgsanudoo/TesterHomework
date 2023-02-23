@@ -14,7 +14,7 @@ To know:
 ### How to use it?
 > bash tester.sh [-d] [-s] <test_num> <runs_test>
 - -d -> Debug mode [Save test files] (Optional)
-- -s <score> -> Set maximum score (optional, default=100)
+- -s (score_test) -> Set maximum score (optional, default=100)
 - <test_num> -> The homework number. [HW(Number)]
 - <runs_test> -> Number runs to be made. [15000]
 
