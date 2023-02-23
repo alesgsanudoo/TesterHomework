@@ -1,22 +1,33 @@
 #!/bin/bash
 
 usage() {
-  echo "CS240 Tester - 0.1"
+  echo "CS240 Tester - 0.2"
   echo ""
-  echo "Usage: tester [-d] <test_number> <num_tests>"
+  echo "Usage: tester [-d] [-s <score>] <test_number> <num_tests>"
   echo "  -d: Debug mode [Save test Files] (optional)"
+  echo "  -s <score>: Set maximum score (optional, default=100)"
   echo ""
-  echo "Example: tester (-d) 5 (Homework number) 15000 (times)"
+  echo "Example: tester (-d) (-s 90) 5 (Homework number) 15000 (times)"
   echo ""
   exit 1
 }
 
 debug_mode=false
+max_score=100
 
-while getopts ":d" opt; do
+while getopts ":ds:" opt; do
   case ${opt} in
     d )
       debug_mode=true
+      ;;
+    s )
+      max_score=$OPTARG
+      if ! [[ "$max_score" =~ ^[0-9]+$ ]] || ((max_score < 0)) || ((max_score > 100)); then
+        echo "CS240 Tester - 0.2"
+        echo ""
+        echo "Error: score must be an integer between 0 and 100."
+        exit 1
+      fi
       ;;
     \? )
       usage
@@ -74,7 +85,7 @@ passed=true
 pass_count=0
 for ((i=1; i<=$NUM_TESTS; i++)); do
   output="$($RUN 2>&1)"
-  if [[ "$?" != "100" ]]; then
+  if [[ "$?" != "$max_score" ]]; then
     echo -e "\nTest #$i failed"
     echo "$output"
     score=${output##*: }
@@ -100,7 +111,7 @@ if $passed; then
   echo -e " Homework: #$1"
   echo -e " Test count: $pass_count/$2"
   echo -e ""
-  echo -e " Score: 100/100"
+  echo -e " Score: $max_score/$max_score"
   echo -e " "
   echo -e " You're done! :)"
   echo -e " "
@@ -119,7 +130,7 @@ if $passed; then
     echo -e " Mode = Normal"
   fi
   echo -e " "
-  echo -e " Score: $score/100"
+  echo -e " Score: $score/$max_score"
   echo -e " "
   echo -e " You're no done! :("
   echo -e " "
