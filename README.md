@@ -20,10 +20,12 @@ To know:
 
 #Examples:
 - `tester -d 5 15000`: It will run homework 5 test cases 15000 times. Also it will save **test_data_files** directory (Debug mode).
-- `tester 5 15000`: It will run homework 5 test cases 15000 times. However, it won't save **test_data_files** directory (Debug mode).
+- `tester 5 15000`: It will run homework 5 test cases 15000 times. However, it won't save **test_data_files** directory ( No Debug mode).
 - `tester -d -s 62 5 15000`: It will run homework 5 test cases 15000 times. It will save **test_data_files** directory (Debug mode). Also, it will change the grade of the tester, then it will allow you to test one fuction multiple times. (Withough setting -s is 100).
 
-> If you are in another directory in order to run the `sh` file just use bash bash **~/tester.sh** 
+> **Note!** I am using tester as I did Optional (Alias) section, otherwise, you should use bash **~/tester.sh** instead of tester.
+
+> If you are in another directory in order to run the `sh` file just use bash **~/tester.sh** 
 
 ### Optional (Alias)
 It sounds awkward to put `bash tester.sh` with the directory every time, isn't? I will give you a solution ^.^. 
