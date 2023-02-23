@@ -12,7 +12,7 @@ To know:
 - You are done! ^.^
 
 ### How to use it?
-> bash tester.sh [-d] [-s] <test_num> <runs_test>
+> bash tester.sh [-d] [-s] (score) <test_num> <runs_test>
 - -d -> Debug mode [Save test files] (Optional)
 - -s (score_test) -> Set maximum score (optional, default=100)
 - <test_num> -> The homework number. [HW(Number)]
