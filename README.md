@@ -6,7 +6,7 @@ To know:
 - It will sleep every 30 runs during 1 second to avoid seg fault. (Seg fault could happend)
 - Modes: Debug/Normal. Save delete test files or delete test files.
 
-### Installation in Mac terminal (Purdue SSH):
+### Installation in terminal (Purdue SSH):
 - Use '~' directory.
 - Create a `.sh` file, then paste the code, or just clone the repository ``https://github.com/alesgsanudoo/TesterHomework.git``.
 - You are done! ^.^
