@@ -7,7 +7,7 @@ To know:
 - Modes: Debug/Normal. Save delete test files or delete test files.
 
 
-### Tested:
+### Test for Seg fault:
 I decided to test the script it in order to see, If I get any unexpected errors. The code run 150.000 times succesfully in 2h.
 
 ### Installation in terminal (Purdue SSH):
