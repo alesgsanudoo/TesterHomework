@@ -6,6 +6,10 @@ To know:
 - It will sleep every 30 runs during 1 second to avoid seg fault. (Seg fault could happend)
 - Modes: Debug/Normal. Save delete test files or delete test files.
 
+
+### Tested:
+I decided to test the script it in order to see, If I get any unexpected errors. The code run 150.000 times succesfully in 2h.
+
 ### Installation in terminal (Purdue SSH):
 - Use '~' directory.
 - Create a `.sh` file, then paste the code, or just clone the repository ``https://github.com/alesgsanudoo/TesterHomework.git``.
