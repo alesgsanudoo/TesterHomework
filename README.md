@@ -1,6 +1,6 @@
 # Tester Script - CS240 Class
 I decided to create this script to test my assigments of CS240 (Purdue University).
-> **Note**: This works in mac or any linux systems, I haven't test it in windows device.
+> **Note**: This works only in (Purdue ssh servers).
 
 To know:
 - It will sleep every 30 runs during 1 second to avoid seg fault. (Seg fault could happend)
