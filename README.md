@@ -11,7 +11,7 @@ To know:
 I decided to test the script it in order to see, If I get any unexpected errors. The code run 150.000 times succesfully in 2h.
 
 ### Installation in terminal (Purdue SSH):
-- Use '~' directory.
+- Use '~' directory. (Move the file to ~ directory with mv filename ~)
 - Create a `.sh` file, then paste the code, or just clone the repository ``https://github.com/alesgsanudoo/TesterHomework.git``.
 - You are done! ^.^
 
